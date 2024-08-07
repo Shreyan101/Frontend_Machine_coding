@@ -14,11 +14,15 @@ Machine coding rounds are an essential part of frontend interviews where develop
 This repository is organized into separate folders, each containing a unique question. Some of the questions you will find here are:
 
 Loader: Implement a loading spinner.
+
 ChessBox: Create a chessboard pattern using CSS and JavaScript.
+
 Stopwatch: Develop a functional stopwatch with start, stop, and reset capabilities.
+
 Infinite Scroll: Build an infinite scrolling list that loads more items as you scroll down.
 And many more...
-How to Use
+
+## How to Use
 To view and interact with the questions in a user interface, you need to clone this repository and run the project locally.
 
 ## Getting Started
