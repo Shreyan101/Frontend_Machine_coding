@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='containerHome'>
       <div className='nav-link'>
         <Link to='/loader' style={{ textDecoration: 'none' }}>
           <div className='text'>Loader</div>
