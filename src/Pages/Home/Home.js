@@ -5,6 +5,17 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className='containerHome'>
+      <div>
+        <marquee>
+          <h1
+            style={{
+              color: 'white',
+            }}
+          >
+            Machine Coding Round - FrontEnd
+          </h1>
+        </marquee>
+      </div>
       <div className='nav-link'>
         <Link to='/loader' style={{ textDecoration: 'none' }}>
           <div className='text'>Loader</div>

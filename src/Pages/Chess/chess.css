@@ -1,0 +1,40 @@
+.chessboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 228, 159);
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+   border: 1px solid;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.black {
+  background-color: #000;
+}
+
+.selected {
+   background-color: rgb(255, 255, 0);
+}
+
+.knight-move {
+  background-color: red;
+}
