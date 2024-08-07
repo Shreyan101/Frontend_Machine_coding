@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import Loader from './Pages/Loader/Loader';
-import Chess from './Pages/Chess/Chess';
-import Stopwatch from './Pages/Stopwatch/Stopwatch';
-import FileFolder from './Pages/FileFolder/FileFolder';
-import InfiniteScroll from './Pages/InfiniteScroll/InfiniteScroll';
+
+const Loader = lazy(() => import('./Pages/Loader/Loader'));
+const Chess = lazy(() => import('./Pages/Chess/Chess'));
+const Stopwatch = lazy(() => import('./Pages/Stopwatch/Stopwatch'));
+const FileFolder = lazy(() => import('./Pages/FileFolder/FileFolder'));
+const InfiniteScroll = lazy(() =>
+  import('./Pages/InfiniteScroll/InfiniteScroll')
+);
 
 const appRouter = createBrowserRouter([
   {
@@ -14,23 +17,43 @@ const appRouter = createBrowserRouter([
   },
   {
     path: '/loader',
-    element: <Loader />,
+    element: (
+      <Suspense fallback='Loading.....'>
+        <Loader />
+      </Suspense>
+    ),
   },
   {
     path: '/chess',
-    element: <Chess />,
+    element: (
+      <Suspense fallback='Loading.....'>
+        <Chess />
+      </Suspense>
+    ),
   },
   {
     path: '/stopwatch',
-    element: <Stopwatch />,
+    element: (
+      <Suspense fallback='Loading.....'>
+        <Stopwatch />
+      </Suspense>
+    ),
   },
   {
     path: '/file-folder',
-    element: <FileFolder />,
+    element: (
+      <Suspense fallback='Loading.....'>
+        <FileFolder />
+      </Suspense>
+    ),
   },
   {
     path: '/infinite-scroll',
-    element: <InfiniteScroll />,
+    element: (
+      <Suspense fallback='Loading.....'>
+        <InfiniteScroll />
+      </Suspense>
+    ),
   },
 ]);
 
