@@ -1,0 +1,29 @@
+.star-rating {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-color: darkblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-rating button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.star-rating .on .star {
+  color: gold;
+}
+
+.star-rating .off .star {
+  color: #ddd;
+}
+
+.star {
+  font-size: 70px;
+  transition: color 0.2s;
+}

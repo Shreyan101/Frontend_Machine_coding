@@ -11,6 +11,7 @@ const InfiniteScroll = lazy(() =>
 );
 const TicTacToe = lazy(() => import('./Pages/TicTacToe/TicTacToe'));
 const TrafficLight = lazy(() => import('./Pages/TrafficLight/TrafficLight'));
+const StarRating = lazy(() => import('./Pages/StarRating/StarRating'));
 
 const appRouter = createBrowserRouter([
   {
@@ -70,6 +71,14 @@ const appRouter = createBrowserRouter([
     element: (
       <Suspense fallback='Loading.....'>
         <TrafficLight />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/star-rating',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <StarRating />
       </Suspense>
     ),
   },
