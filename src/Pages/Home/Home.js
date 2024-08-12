@@ -32,6 +32,9 @@ const Home = () => {
         <Link to='/infinite-scroll' style={{ textDecoration: 'none' }}>
           <div className='text'>Infinite Scroll</div>
         </Link>
+        <Link to='/tic-tac-toe' style={{ textDecoration: 'none' }}>
+          <div className='text'> Tic-Tac-Toe</div>
+        </Link>
       </div>
     </div>
   );

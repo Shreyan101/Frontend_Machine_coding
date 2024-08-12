@@ -9,6 +9,7 @@ const FileFolder = lazy(() => import('./Pages/FileFolder/FileFolder'));
 const InfiniteScroll = lazy(() =>
   import('./Pages/InfiniteScroll/InfiniteScroll')
 );
+const TicTacToe = lazy(() => import('./Pages/TicTacToe/TicTacToe'));
 
 const appRouter = createBrowserRouter([
   {
@@ -52,6 +53,14 @@ const appRouter = createBrowserRouter([
     element: (
       <Suspense fallback='Loading.....'>
         <InfiniteScroll />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/tic-tac-toe',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <TicTacToe />
       </Suspense>
     ),
   },
