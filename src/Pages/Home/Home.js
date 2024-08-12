@@ -39,6 +39,15 @@ const Home = () => {
         <Link to='/star-rating' style={{ textDecoration: 'none' }}>
           <div className='text'>Star Rating</div>
         </Link>
+        <Link to='/data-table' style={{ textDecoration: 'none' }}>
+          <div className='text'>Data Table</div>
+        </Link>
+        <Link to='/accordion' style={{ textDecoration: 'none' }}>
+          <div className='text'>Accordion</div>
+        </Link>
+        <Link to='/carousel' style={{ textDecoration: 'none' }}>
+          <div className='text'>Carousel</div>
+        </Link>
         <Link to='/file-folder' style={{ textDecoration: 'none' }}>
           <div className='text'>File/Folder Structure</div>
         </Link>

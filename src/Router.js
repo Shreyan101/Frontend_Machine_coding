@@ -12,6 +12,9 @@ const InfiniteScroll = lazy(() =>
 const TicTacToe = lazy(() => import('./Pages/TicTacToe/TicTacToe'));
 const TrafficLight = lazy(() => import('./Pages/TrafficLight/TrafficLight'));
 const StarRating = lazy(() => import('./Pages/StarRating/StarRating'));
+const DataTable = lazy(() => import('./Pages/DataTable/DataTable'));
+const Accordion = lazy(() => import('./Pages/Accordion/Accordion'));
+const Carousel = lazy(() => import('./Pages/Carousel/Carousel'));
 
 const appRouter = createBrowserRouter([
   {
@@ -79,6 +82,30 @@ const appRouter = createBrowserRouter([
     element: (
       <Suspense fallback='Loading.....'>
         <StarRating />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/data-table',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <DataTable />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/accordion',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <Accordion />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/carousel',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <Carousel />
       </Suspense>
     ),
   },
