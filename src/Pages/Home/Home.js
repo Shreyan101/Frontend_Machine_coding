@@ -42,6 +42,9 @@ const Home = () => {
         <Link to='/data-table' style={{ textDecoration: 'none' }}>
           <div className='text'>Data Table</div>
         </Link>
+        <Link to='/todo-list' style={{ textDecoration: 'none' }}>
+          <div className='text'>ToDo List</div>
+        </Link>
         <Link to='/accordion' style={{ textDecoration: 'none' }}>
           <div className='text'>Accordion</div>
         </Link>

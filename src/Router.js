@@ -15,6 +15,7 @@ const StarRating = lazy(() => import('./Pages/StarRating/StarRating'));
 const DataTable = lazy(() => import('./Pages/DataTable/DataTable'));
 const Accordion = lazy(() => import('./Pages/Accordion/Accordion'));
 const Carousel = lazy(() => import('./Pages/Carousel/Carousel'));
+const ToDoList = lazy(() => import('./Pages/ToDoList/ToDoList'));
 
 const appRouter = createBrowserRouter([
   {
@@ -106,6 +107,14 @@ const appRouter = createBrowserRouter([
     element: (
       <Suspense fallback='Loading.....'>
         <Carousel />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/todo-list',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <ToDoList />
       </Suspense>
     ),
   },
