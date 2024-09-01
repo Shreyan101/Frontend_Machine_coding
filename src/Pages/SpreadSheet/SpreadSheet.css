@@ -1,0 +1,44 @@
+.spreadsheet-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spreadsheet {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 600px;
+}
+
+.spreadsheet td {
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.spreadsheet td.cell {
+  padding: 5px;
+}
+
+.cell-input {
+  width: 95%;
+  height: 90%;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.cell-input:focus {
+  border: 1px solid #666;
+}
+
+.spreadsheet tr:first-child td {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}

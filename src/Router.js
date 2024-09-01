@@ -16,6 +16,8 @@ const DataTable = lazy(() => import('./Pages/DataTable/DataTable'));
 const Accordion = lazy(() => import('./Pages/Accordion/Accordion'));
 const Carousel = lazy(() => import('./Pages/Carousel/Carousel'));
 const ToDoList = lazy(() => import('./Pages/ToDoList/ToDoList'));
+const Spreadsheet = lazy(() => import('./Pages/SpreadSheet/SpreadSheet'));
+const DragAndDrop = lazy(() => import('./Pages/DragAndDrop/DrapAndDrop'));
 
 const appRouter = createBrowserRouter([
   {
@@ -95,6 +97,14 @@ const appRouter = createBrowserRouter([
     ),
   },
   {
+    path: '/drag-and-drop',
+    element: (
+      <Suspense fallback='Loading.....'>
+        <DragAndDrop />
+      </Suspense>
+    ),
+  },
+  {
     path: '/accordion',
     element: (
       <Suspense fallback='Loading.....'>
@@ -115,6 +125,14 @@ const appRouter = createBrowserRouter([
     element: (
       <Suspense fallback='Loading.....'>
         <ToDoList />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/spreadsheet',
+    element: (
+      <Suspense>
+        <Spreadsheet />
       </Suspense>
     ),
   },
